@@ -77,7 +77,7 @@
 			);
 			dependencies = (
 			);
-			name = emptyinterop;
+			name = empty;
 			productName = emptyinterop;
 			productReference = AAF6D1821488272000D83284 /* libempty.dylib */;
 			productType = "com.apple.product-type.library.dynamic";
