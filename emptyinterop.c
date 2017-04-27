@@ -1,5 +1,7 @@
 #include "interoplib.h"
 
+#include "emptyinterop.h"
+
 /*********************************************************************/
 
 int32 Interop_CreateInstance(char *TypeName, char *InstanceId, int32 InstanceIdLength,
