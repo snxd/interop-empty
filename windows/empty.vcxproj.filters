@@ -62,12 +62,6 @@
     </None>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="..\interop\interoplib.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="..\interop\interopstub.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
     <ClInclude Include="..\jansson\hashtable.h">
       <Filter>Jansson</Filter>
     </ClInclude>
@@ -93,6 +87,12 @@
       <Filter>Interop</Filter>
     </ClInclude>
     <ClInclude Include="..\interop\workflowi.h">
+      <Filter>Interop</Filter>
+    </ClInclude>
+    <ClInclude Include="..\interop\interoplib.h">
+      <Filter>Interop</Filter>
+    </ClInclude>
+    <ClInclude Include="..\interop\interopstub.h">
       <Filter>Interop</Filter>
     </ClInclude>
   </ItemGroup>
