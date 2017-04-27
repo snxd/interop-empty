@@ -1,6 +1,5 @@
 #include "interoplib.h"
-
-#include "emptyinterop.h"
+#include "interopstub.h"
 
 /*********************************************************************/
 
