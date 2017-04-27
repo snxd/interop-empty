@@ -3,6 +3,7 @@
 ### Requirements
 
 * Visual Studio 2013
+* DIRECT 5
 
 ### Overview
 
