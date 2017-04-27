@@ -169,6 +169,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				EXECUTABLE_PREFIX = lib;
+				EXPORTED_SYMBOLS_FILE = "${PROJECT_DIR}/emptyinterop.def";
 				GCC_VERSION = "";
 				HEADER_SEARCH_PATHS = ../interop;
 				OTHER_LDFLAGS = (
@@ -183,6 +184,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				EXECUTABLE_PREFIX = lib;
+				EXPORTED_SYMBOLS_FILE = "${PROJECT_DIR}/emptyinterop.def";
 				GCC_VERSION = "";
 				HEADER_SEARCH_PATHS = ../interop;
 				OTHER_LDFLAGS = (
