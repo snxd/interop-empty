@@ -15,6 +15,7 @@ int32 Interop_CreateInstance(char *TypeName, char *InstanceId, int32 InstanceIdL
 
 int32 Interop_SetOverride(char *Key, void *Value)
 {
+    InteropLib_SetOverride(Key, Value);
     return TRUE;
 }
 

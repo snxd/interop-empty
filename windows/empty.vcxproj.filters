@@ -11,6 +11,9 @@
     <Filter Include="Jansson">
       <UniqueIdentifier>{c3a8740a-242e-4754-9de8-db140429627a}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Interop">
+      <UniqueIdentifier>{cb7c891e-f1fd-4471-b76c-4b3d35a3acca}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="..\emptyinterop.c">
@@ -49,6 +52,9 @@
     <ClCompile Include="..\jansson\value.c">
       <Filter>Jansson</Filter>
     </ClCompile>
+    <ClCompile Include="..\interop\interoplib.c">
+      <Filter>Interop</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <None Include="empty.def">
@@ -82,6 +88,12 @@
     </ClInclude>
     <ClInclude Include="..\jansson\utf.h">
       <Filter>Jansson</Filter>
+    </ClInclude>
+    <ClInclude Include="..\interop\taski.h">
+      <Filter>Interop</Filter>
+    </ClInclude>
+    <ClInclude Include="..\interop\workflowi.h">
+      <Filter>Interop</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>
