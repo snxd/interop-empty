@@ -48,7 +48,10 @@ Product {
         prefix: "../interop/"
         files: [
             "interoplib.h",
-            "interopstub.h"
+            "interoplib.c",
+            "interopstub.h",
+            "workflowi.h",
+            "taski.h"
         ]
     }
 
