@@ -11,9 +11,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		AAF6D1821488272000D83284 /* libemptyinterop.dylib */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.dylib"; includeInIndex = 0; path = libemptyinterop.dylib; sourceTree = BUILT_PRODUCTS_DIR; };
+		AAF6D1821488272000D83284 /* libempty.dylib */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.dylib"; includeInIndex = 0; path = libempty.dylib; sourceTree = BUILT_PRODUCTS_DIR; };
 		AAF6D19F1488292300D83284 /* emptyinterop.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = emptyinterop.c; path = ../emptyinterop.c; sourceTree = "<group>"; };
-		AAF6D1A11488292F00D83284 /* emptyinterop.def */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = emptyinterop.def; sourceTree = "<group>"; };
+		AAF6D1A11488292F00D83284 /* empty.def */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = empty.def; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -38,7 +38,7 @@
 		AAF6D1831488272000D83284 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				AAF6D1821488272000D83284 /* libemptyinterop.dylib */,
+				AAF6D1821488272000D83284 /* libempty.dylib */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -47,7 +47,7 @@
 			isa = PBXGroup;
 			children = (
 				AAF6D19F1488292300D83284 /* emptyinterop.c */,
-				AAF6D1A11488292F00D83284 /* emptyinterop.def */,
+				AAF6D1A11488292F00D83284 /* empty.def */,
 			);
 			name = Sources;
 			sourceTree = "<group>";
@@ -65,9 +65,9 @@
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		AAF6D1811488272000D83284 /* emptyinterop */ = {
+		AAF6D1811488272000D83284 /* empty */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = AAF6D1861488272000D83284 /* Build configuration list for PBXNativeTarget "emptyinterop" */;
+			buildConfigurationList = AAF6D1861488272000D83284 /* Build configuration list for PBXNativeTarget "empty" */;
 			buildPhases = (
 				AAF6D17E1488272000D83284 /* Sources */,
 				AAF6D17F1488272000D83284 /* Frameworks */,
@@ -79,7 +79,7 @@
 			);
 			name = emptyinterop;
 			productName = emptyinterop;
-			productReference = AAF6D1821488272000D83284 /* libemptyinterop.dylib */;
+			productReference = AAF6D1821488272000D83284 /* libempty.dylib */;
 			productType = "com.apple.product-type.library.dynamic";
 		};
 /* End PBXNativeTarget section */
@@ -91,7 +91,7 @@
 				LastUpgradeCheck = 0420;
 				ORGANIZATIONNAME = None;
 			};
-			buildConfigurationList = AAF6D17C1488272000D83284 /* Build configuration list for PBXProject "emptyinterop" */;
+			buildConfigurationList = AAF6D17C1488272000D83284 /* Build configuration list for PBXProject "empty" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -103,7 +103,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				AAF6D1811488272000D83284 /* emptyinterop */,
+				AAF6D1811488272000D83284 /* empty */,
 			);
 		};
 /* End PBXProject section */
@@ -169,12 +169,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				EXECUTABLE_PREFIX = lib;
-				EXPORTED_SYMBOLS_FILE = "${PROJECT_DIR}/emptyinterop.def";
+				EXPORTED_SYMBOLS_FILE = "${PROJECT_DIR}/empty.def";
 				GCC_VERSION = "";
 				HEADER_SEARCH_PATHS = ../interop;
 				OTHER_LDFLAGS = (
 					"-exported_symbols_list",
-					emptyinterop.def,
+					empty.def,
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -184,12 +184,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				EXECUTABLE_PREFIX = lib;
-				EXPORTED_SYMBOLS_FILE = "${PROJECT_DIR}/emptyinterop.def";
+				EXPORTED_SYMBOLS_FILE = "${PROJECT_DIR}/empty.def";
 				GCC_VERSION = "";
 				HEADER_SEARCH_PATHS = ../interop;
 				OTHER_LDFLAGS = (
 					"-exported_symbols_list",
-					emptyinterop.def,
+					empty.def,
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -198,7 +198,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		AAF6D17C1488272000D83284 /* Build configuration list for PBXProject "emptyinterop" */ = {
+		AAF6D17C1488272000D83284 /* Build configuration list for PBXProject "empty" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				AAF6D1841488272000D83284 /* Debug */,
@@ -207,7 +207,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		AAF6D1861488272000D83284 /* Build configuration list for PBXNativeTarget "emptyinterop" */ = {
+		AAF6D1861488272000D83284 /* Build configuration list for PBXNativeTarget "empty" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				AAF6D1871488272000D83284 /* Debug */,

@@ -1,7 +1,7 @@
 import qbs;
 
 Product {
-    name: "emptyinterop"
+    name: "empty"
     type: [ "dynamiclibrary" ]
     consoleApplication: false
 
@@ -22,14 +22,14 @@ Product {
         ])
         cpp.visibility: "hidden"
         cpp.linkerFlags: base.concat([
-            "-Wl,--retain-symbols-file=" + sourceDirectory + "/emptyinterop.def"
+            "-Wl,--retain-symbols-file=" + sourceDirectory + "/empty.def"
         ])
     }
 
     Group {
         name: "exports"
         files: [
-            "emptyinterop.def"
+            "empty.def"
         ]
     }
 
