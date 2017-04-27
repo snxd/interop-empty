@@ -1,18 +1,12 @@
-#include "interoptypes.h"
 #include "interoplib.h"
 
 /*********************************************************************/
 
-#define FALSE   (0)
-#define TRUE    (1)
-
-/*********************************************************************/
-
 int32 Interop_CreateInstance(char *TypeName, char *InstanceId, int32 InstanceIdLength,
-                             void *ExecuteUserPtr, InteropExecuteCallback Execute,
-                             InteropInvokeInstanceCallback *InvokeInstance,
-                             InteropRemoveInstanceCallback *RemoveInstance,
-                             InteropProcessInstanceCallback *ProcessInstance,
+                             void *ExecuteUserPtr, Interop_ExecuteCallback Execute,
+                             Interop_InvokeInstanceCallback *InvokeInstance,
+                             Interop_ReleaseInstanceCallback *ReleaseInstance,
+                             Interop_ProcessInstanceCallback *ProcessInstance,
                              void **UserPtr)
 {
     return FALSE;
