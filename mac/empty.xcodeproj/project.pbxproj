@@ -28,6 +28,9 @@
 		D867CDF91EB29B0A00F7CEF7 /* utf.c in Sources */ = {isa = PBXBuildFile; fileRef = D867CDE71EB29B0A00F7CEF7 /* utf.c */; };
 		D867CDFA1EB29B0A00F7CEF7 /* utf.h in Headers */ = {isa = PBXBuildFile; fileRef = D867CDE81EB29B0A00F7CEF7 /* utf.h */; };
 		D867CDFB1EB29B0A00F7CEF7 /* value.c in Sources */ = {isa = PBXBuildFile; fileRef = D867CDE91EB29B0A00F7CEF7 /* value.c */; };
+		D867CE341EB2BAE400F7CEF7 /* interoplib.c in Sources */ = {isa = PBXBuildFile; fileRef = D867CE311EB2BAE400F7CEF7 /* interoplib.c */; };
+		D867CE351EB2BAE400F7CEF7 /* taski.h in Headers */ = {isa = PBXBuildFile; fileRef = D867CE321EB2BAE400F7CEF7 /* taski.h */; };
+		D867CE361EB2BAE400F7CEF7 /* workflowi.h in Headers */ = {isa = PBXBuildFile; fileRef = D867CE331EB2BAE400F7CEF7 /* workflowi.h */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -54,6 +57,9 @@
 		D867CDE71EB29B0A00F7CEF7 /* utf.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = utf.c; path = ../jansson/utf.c; sourceTree = "<group>"; };
 		D867CDE81EB29B0A00F7CEF7 /* utf.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = utf.h; path = ../jansson/utf.h; sourceTree = "<group>"; };
 		D867CDE91EB29B0A00F7CEF7 /* value.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = value.c; path = ../jansson/value.c; sourceTree = "<group>"; };
+		D867CE311EB2BAE400F7CEF7 /* interoplib.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = interoplib.c; path = ../interop/interoplib.c; sourceTree = "<group>"; };
+		D867CE321EB2BAE400F7CEF7 /* taski.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = taski.h; path = ../interop/taski.h; sourceTree = "<group>"; };
+		D867CE331EB2BAE400F7CEF7 /* workflowi.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = workflowi.h; path = ../interop/workflowi.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,8 +103,11 @@
 		D867CDD11EB29AE700F7CEF7 /* Interop */ = {
 			isa = PBXGroup;
 			children = (
+				D867CE311EB2BAE400F7CEF7 /* interoplib.c */,
 				D867CDD21EB29AF300F7CEF7 /* interoplib.h */,
 				D867CDD31EB29AF300F7CEF7 /* interopstub.h */,
+				D867CE321EB2BAE400F7CEF7 /* taski.h */,
+				D867CE331EB2BAE400F7CEF7 /* workflowi.h */,
 			);
 			name = Interop;
 			sourceTree = "<group>";
@@ -140,6 +149,8 @@
 				D867CDF01EB29B0A00F7CEF7 /* jansson_private.h in Headers */,
 				D867CDFA1EB29B0A00F7CEF7 /* utf.h in Headers */,
 				D867CDD41EB29AF300F7CEF7 /* interoplib.h in Headers */,
+				D867CE351EB2BAE400F7CEF7 /* taski.h in Headers */,
+				D867CE361EB2BAE400F7CEF7 /* workflowi.h in Headers */,
 				D867CDF71EB29B0A00F7CEF7 /* strbuffer.h in Headers */,
 				D867CDF11EB29B0A00F7CEF7 /* jansson.h in Headers */,
 				D867CDEE1EB29B0A00F7CEF7 /* hashtable.h in Headers */,
@@ -202,6 +213,7 @@
 				D867CDF41EB29B0A00F7CEF7 /* memory.c in Sources */,
 				D867CDEB1EB29B0A00F7CEF7 /* error.c in Sources */,
 				D867CDF21EB29B0A00F7CEF7 /* load.c in Sources */,
+				D867CE341EB2BAE400F7CEF7 /* interoplib.c in Sources */,
 				D867CDF61EB29B0A00F7CEF7 /* strbuffer.c in Sources */,
 				D867CDEC1EB29B0A00F7CEF7 /* hashtable_seed.c in Sources */,
 				D867CDED1EB29B0A00F7CEF7 /* hashtable.c in Sources */,
