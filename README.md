@@ -3,7 +3,6 @@
 ### Requirements
 
 * Visual Studio 2013
-* DIRECT 3.6 or higher
 
 ### Overview
 
