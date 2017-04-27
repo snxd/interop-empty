@@ -14,12 +14,12 @@ int32 Interop_CreateInstance(char *TypeName, char *InstanceId, int32 InstanceIdL
     return FALSE;
 }
 
-int32 Interop_SetOverride(char *Key, char *Value)
+int32 Interop_SetOverride(char *Key, void *Value)
 {
     return TRUE;
 }
 
-int32 Interop_SetOption(char *Key, char *Value)
+int32 Interop_SetOption(char *Key, void *Value)
 {
     return TRUE;
 }
