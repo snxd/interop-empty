@@ -8,14 +8,14 @@
 
 /* Begin PBXBuildFile section */
 		AAF6D1A01488292300D83284 /* emptyinterop.c in Sources */ = {isa = PBXBuildFile; fileRef = AAF6D19F1488292300D83284 /* emptyinterop.c */; };
+		D82D5F6B1EB2710B00EA3BF5 /* interoplib.h in Headers */ = {isa = PBXBuildFile; fileRef = D82D5F6A1EB2710B00EA3BF5 /* interoplib.h */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		AAF6D1821488272000D83284 /* libemptyinterop.dylib */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.dylib"; includeInIndex = 0; path = libemptyinterop.dylib; sourceTree = BUILT_PRODUCTS_DIR; };
-		AAF6D19D1488291600D83284 /* debug32.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; name = debug32.xcconfig; path = ../../../../debug32.xcconfig; sourceTree = "<group>"; };
-		AAF6D19E1488291600D83284 /* release32.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; name = release32.xcconfig; path = ../../../../release32.xcconfig; sourceTree = "<group>"; };
 		AAF6D19F1488292300D83284 /* emptyinterop.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = emptyinterop.c; path = ../emptyinterop.c; sourceTree = "<group>"; };
 		AAF6D1A11488292F00D83284 /* emptyinterop.def */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = emptyinterop.def; sourceTree = "<group>"; };
+		D82D5F6A1EB2710B00EA3BF5 /* interoplib.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = interoplib.h; path = ../interoplib.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -32,8 +32,6 @@
 		AAF6D1771488272000D83284 = {
 			isa = PBXGroup;
 			children = (
-				AAF6D19D1488291600D83284 /* debug32.xcconfig */,
-				AAF6D19E1488291600D83284 /* release32.xcconfig */,
 				AAF6D196148827BB00D83284 /* Sources */,
 				AAF6D1831488272000D83284 /* Products */,
 			);
@@ -50,6 +48,7 @@
 		AAF6D196148827BB00D83284 /* Sources */ = {
 			isa = PBXGroup;
 			children = (
+				D82D5F6A1EB2710B00EA3BF5 /* interoplib.h */,
 				AAF6D1A11488292F00D83284 /* emptyinterop.def */,
 				AAF6D19F1488292300D83284 /* emptyinterop.c */,
 			);
@@ -63,6 +62,7 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D82D5F6B1EB2710B00EA3BF5 /* interoplib.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -126,7 +126,6 @@
 /* Begin XCBuildConfiguration section */
 		AAF6D1841488272000D83284 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = AAF6D19D1488291600D83284 /* debug32.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
@@ -153,7 +152,6 @@
 		};
 		AAF6D1851488272000D83284 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = AAF6D19E1488291600D83284 /* release32.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
@@ -173,10 +171,9 @@
 		};
 		AAF6D1871488272000D83284 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = AAF6D19D1488291600D83284 /* debug32.xcconfig */;
 			buildSettings = {
 				EXECUTABLE_PREFIX = lib;
-				GCC_VERSION = com.apple.compilers.llvmgcc42;
+				GCC_VERSION = "";
 				OTHER_LDFLAGS = (
 					"-exported_symbols_list",
 					emptyinterop.def,
@@ -187,10 +184,9 @@
 		};
 		AAF6D1881488272000D83284 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = AAF6D19E1488291600D83284 /* release32.xcconfig */;
 			buildSettings = {
 				EXECUTABLE_PREFIX = lib;
-				GCC_VERSION = com.apple.compilers.llvmgcc42;
+				GCC_VERSION = "";
 				OTHER_LDFLAGS = (
 					"-exported_symbols_list",
 					emptyinterop.def,
