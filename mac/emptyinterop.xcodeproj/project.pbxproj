@@ -8,16 +8,12 @@
 
 /* Begin PBXBuildFile section */
 		AAF6D1A01488292300D83284 /* emptyinterop.c in Sources */ = {isa = PBXBuildFile; fileRef = AAF6D19F1488292300D83284 /* emptyinterop.c */; };
-		D82D5F6B1EB2710B00EA3BF5 /* interoplib.h in Headers */ = {isa = PBXBuildFile; fileRef = D82D5F6A1EB2710B00EA3BF5 /* interoplib.h */; };
-		D82D5F6E1EB271E400EA3BF5 /* emptyinterop.h in Headers */ = {isa = PBXBuildFile; fileRef = D82D5F6D1EB271E400EA3BF5 /* emptyinterop.h */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		AAF6D1821488272000D83284 /* libemptyinterop.dylib */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.dylib"; includeInIndex = 0; path = libemptyinterop.dylib; sourceTree = BUILT_PRODUCTS_DIR; };
 		AAF6D19F1488292300D83284 /* emptyinterop.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = emptyinterop.c; path = ../emptyinterop.c; sourceTree = "<group>"; };
 		AAF6D1A11488292F00D83284 /* emptyinterop.def */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = emptyinterop.def; sourceTree = "<group>"; };
-		D82D5F6A1EB2710B00EA3BF5 /* interoplib.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = interoplib.h; path = ../interoplib.h; sourceTree = "<group>"; };
-		D82D5F6D1EB271E400EA3BF5 /* emptyinterop.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = emptyinterop.h; path = ../emptyinterop.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,8 +48,6 @@
 			children = (
 				AAF6D19F1488292300D83284 /* emptyinterop.c */,
 				AAF6D1A11488292F00D83284 /* emptyinterop.def */,
-				D82D5F6D1EB271E400EA3BF5 /* emptyinterop.h */,
-				D82D5F6A1EB2710B00EA3BF5 /* interoplib.h */,
 			);
 			name = Sources;
 			sourceTree = "<group>";
@@ -65,8 +59,6 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D82D5F6E1EB271E400EA3BF5 /* emptyinterop.h in Headers */,
-				D82D5F6B1EB2710B00EA3BF5 /* interoplib.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -178,6 +170,7 @@
 			buildSettings = {
 				EXECUTABLE_PREFIX = lib;
 				GCC_VERSION = "";
+				HEADER_SEARCH_PATHS = ../interop;
 				OTHER_LDFLAGS = (
 					"-exported_symbols_list",
 					emptyinterop.def,
@@ -191,6 +184,7 @@
 			buildSettings = {
 				EXECUTABLE_PREFIX = lib;
 				GCC_VERSION = "";
+				HEADER_SEARCH_PATHS = ../interop;
 				OTHER_LDFLAGS = (
 					"-exported_symbols_list",
 					emptyinterop.def,
