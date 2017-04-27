@@ -18,6 +18,7 @@ Product {
         condition: qbs.targetOS.contains("linux")
         cpp.includePaths: outer.concat([
             "/usr/include/",
+            "../jansson/",
             "../interop/"
         ])
         cpp.visibility: "hidden"
@@ -41,12 +42,38 @@ Product {
         ]
     }
 
+
     Group {
-        name: "interop headers"
+        name: "interop"
         prefix: "../interop/"
         files: [
             "interoplib.h",
             "interopstub.h"
+        ]
+    }
+
+    Group {
+        name: "jansson"
+        prefix: "../jansson/"
+        files: [
+            "dump.c",
+            "error.c",
+            "hashtable.h",
+            "hashtable.c",
+            "hashtable_seed.c",
+            "jansson.h",
+            "jansson_config.h",
+            "jansson_private.h",
+            "load.c",
+            "lookup3.h",
+            "memory.c",
+            "pack_unpack.c",
+            "strbuffer.h",
+            "strbuffer.c",
+            "strconv.c",
+            "utf.h",
+            "utf.c",
+            "value.c"
         ]
     }
 

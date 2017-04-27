@@ -52,13 +52,13 @@
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <ClCompile>
       <Optimization>Disabled</Optimization>
-      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;_USRDLL;empty_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;_CRT_SECURE_NO_WARNINGS;_USRDLL;EMPTY_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <MinimalRebuild>true</MinimalRebuild>
       <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
       <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
       <PrecompiledHeader />
       <WarningLevel>Level3</WarningLevel>
-      <AdditionalIncludeDirectories>..\interop</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>..\interop;..\jansson</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <ModuleDefinitionFile>empty.def</ModuleDefinitionFile>
@@ -71,12 +71,12 @@
     <ClCompile>
       <Optimization>MaxSpeed</Optimization>
       <IntrinsicFunctions>true</IntrinsicFunctions>
-      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;_USRDLL;empty_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;_USRDLL;_CRT_SECURE_NO_WARNINGS;EMPTY_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
       <FunctionLevelLinking>true</FunctionLevelLinking>
       <PrecompiledHeader />
       <WarningLevel>Level3</WarningLevel>
-      <AdditionalIncludeDirectories>..\interop</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>..\interop;..\jansson</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <ModuleDefinitionFile>empty.def</ModuleDefinitionFile>
@@ -89,6 +89,17 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="..\emptyinterop.c" />
+    <ClCompile Include="..\jansson\dump.c" />
+    <ClCompile Include="..\jansson\error.c" />
+    <ClCompile Include="..\jansson\hashtable.c" />
+    <ClCompile Include="..\jansson\hashtable_seed.c" />
+    <ClCompile Include="..\jansson\load.c" />
+    <ClCompile Include="..\jansson\memory.c" />
+    <ClCompile Include="..\jansson\pack_unpack.c" />
+    <ClCompile Include="..\jansson\strbuffer.c" />
+    <ClCompile Include="..\jansson\strconv.c" />
+    <ClCompile Include="..\jansson\utf.c" />
+    <ClCompile Include="..\jansson\value.c" />
   </ItemGroup>
   <ItemGroup>
     <None Include="empty.def" />
@@ -96,6 +107,13 @@
   <ItemGroup>
     <ClInclude Include="..\interop\interoplib.h" />
     <ClInclude Include="..\interop\interopstub.h" />
+    <ClInclude Include="..\jansson\hashtable.h" />
+    <ClInclude Include="..\jansson\jansson.h" />
+    <ClInclude Include="..\jansson\jansson_config.h" />
+    <ClInclude Include="..\jansson\jansson_private.h" />
+    <ClInclude Include="..\jansson\lookup3.h" />
+    <ClInclude Include="..\jansson\strbuffer.h" />
+    <ClInclude Include="..\jansson\utf.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
