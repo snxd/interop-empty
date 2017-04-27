@@ -58,6 +58,7 @@
       <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
       <PrecompiledHeader />
       <WarningLevel>Level3</WarningLevel>
+      <AdditionalIncludeDirectories>..\interop</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <ModuleDefinitionFile>emptyinterop.def</ModuleDefinitionFile>
@@ -75,6 +76,7 @@
       <FunctionLevelLinking>true</FunctionLevelLinking>
       <PrecompiledHeader />
       <WarningLevel>Level3</WarningLevel>
+      <AdditionalIncludeDirectories>..\interop</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <ModuleDefinitionFile>emptyinterop.def</ModuleDefinitionFile>
@@ -90,6 +92,10 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="emptyinterop.def" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\interop\interoplib.h" />
+    <ClInclude Include="..\interop\interopstub.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
