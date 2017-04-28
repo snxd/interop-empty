@@ -31,6 +31,7 @@
 		D867CE341EB2BAE400F7CEF7 /* interoplib.c in Sources */ = {isa = PBXBuildFile; fileRef = D867CE311EB2BAE400F7CEF7 /* interoplib.c */; };
 		D867CE351EB2BAE400F7CEF7 /* taski.h in Headers */ = {isa = PBXBuildFile; fileRef = D867CE321EB2BAE400F7CEF7 /* taski.h */; };
 		D867CE361EB2BAE400F7CEF7 /* workflowi.h in Headers */ = {isa = PBXBuildFile; fileRef = D867CE331EB2BAE400F7CEF7 /* workflowi.h */; };
+		D867CE421EB3B68F00F7CEF7 /* dictionaryi.h in Headers */ = {isa = PBXBuildFile; fileRef = D867CE411EB3B68F00F7CEF7 /* dictionaryi.h */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -60,6 +61,7 @@
 		D867CE311EB2BAE400F7CEF7 /* interoplib.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = interoplib.c; path = ../interop/interoplib.c; sourceTree = "<group>"; };
 		D867CE321EB2BAE400F7CEF7 /* taski.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = taski.h; path = ../interop/taski.h; sourceTree = "<group>"; };
 		D867CE331EB2BAE400F7CEF7 /* workflowi.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = workflowi.h; path = ../interop/workflowi.h; sourceTree = "<group>"; };
+		D867CE411EB3B68F00F7CEF7 /* dictionaryi.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = dictionaryi.h; path = ../interop/dictionaryi.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +105,7 @@
 		D867CDD11EB29AE700F7CEF7 /* Interop */ = {
 			isa = PBXGroup;
 			children = (
+				D867CE411EB3B68F00F7CEF7 /* dictionaryi.h */,
 				D867CE311EB2BAE400F7CEF7 /* interoplib.c */,
 				D867CDD21EB29AF300F7CEF7 /* interoplib.h */,
 				D867CDD31EB29AF300F7CEF7 /* interopstub.h */,
@@ -154,6 +157,7 @@
 				D867CDF71EB29B0A00F7CEF7 /* strbuffer.h in Headers */,
 				D867CDF11EB29B0A00F7CEF7 /* jansson.h in Headers */,
 				D867CDEE1EB29B0A00F7CEF7 /* hashtable.h in Headers */,
+				D867CE421EB3B68F00F7CEF7 /* dictionaryi.h in Headers */,
 				D867CDEF1EB29B0A00F7CEF7 /* jansson_config.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
