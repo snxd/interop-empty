@@ -19,7 +19,8 @@ Product {
         cpp.includePaths: outer.concat([
             "/usr/include/",
             "../jansson/",
-            "../interop/"
+            "../interop/",
+            "../"
         ])
         cpp.visibility: "hidden"
         cpp.linkerFlags: base.concat([
@@ -47,6 +48,7 @@ Product {
         name: "interop"
         prefix: "../interop/"
         files: [
+            "dictionaryi.h",
             "interoplib.h",
             "interoplib.c",
             "interopstub.h",
