@@ -1,4 +1,4 @@
-## Empty Interop Example for DIRECT 5.1.9+
+## Empty Interop Example for DIRECT 5.1.9
 
 ### Requirements
 
