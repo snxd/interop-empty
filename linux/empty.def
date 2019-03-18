@@ -1,5 +1,9 @@
-_Interop_CreateInstance
-_Interop_SetOverride
-_Interop_SetOption
-_Interop_Load
-_Interop_Unload
+empty {
+    global:
+        Interop_CreateInstance;
+        Interop_SetOverride;
+        Interop_SetOption;
+        Interop_Load;
+        Interop_Unload;
+    local: *;
+};
