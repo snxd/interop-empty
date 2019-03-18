@@ -2,7 +2,7 @@
 
 ### Requirements
 
-* CMake 2.8 or higher
+* CMake 2.8
 
 ### Overview
 
