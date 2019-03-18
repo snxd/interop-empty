@@ -1,12 +1,34 @@
-## Empty Interop Example for DIRECT 5.1.9
+## Empty Interop Example for DIRECT 5.2
 
 ### Requirements
 
-* Visual Studio 2013
-* Xcode 8
-* QtCreator 5.8
-* DIRECT 5.1.9
+* CMake 2.8 or higher
 
 ### Overview
 
 This is an empty project for interop development.
+
+### Build Instructions
+
+CMake is a makefile generator that produces solutions and project files for various platforms and IDEs. 
+
+#### Visual Studio
+
+```
+cmake .
+cmake --build . --config Debug
+```
+
+#### Xcode
+
+```
+cmake . -G Xcode
+cmake --build . --config Debug
+```
+
+#### Unix Makefiles
+
+```
+cmake . -DCMAKE_BUILD_TYPE=Debug
+cmake --build .
+```
