@@ -10,7 +10,7 @@ This is an empty project for interop development.
 
 ### Build Instructions
 
-CMake is a makefile generator that produces solutions and project files for various platforms and IDEs. 
+CMake is a makefile generator that produces solutions and project files for various compiler toolkits. 
 
 #### Visual Studio
 
