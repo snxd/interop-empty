@@ -1,12 +1,17 @@
 ## Empty Interop Example for DIRECT 5.2
 
+This is an empty project for interop development.
+
+### Contents 
+
+* interop - DIRECT interop headers
+* mac - Macintosh specific files
+* linux - Linux specific files
+* windows - Windows specific files
+
 ### Requirements
 
 * CMake 2.8
-
-### Overview
-
-This is an empty project for interop development.
 
 ### Build Instructions
 
