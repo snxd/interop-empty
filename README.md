@@ -1,11 +1,11 @@
-## Empty Interop Example for DIRECT 5.2
+## Empty Interop Example for DIRECT 6.1
 
 This is an empty project for interop development.
 
 ### Contents 
 
 * interop - DIRECT interop headers
-* mac - Macintosh specific files
+* mac - macOS specific files
 * linux - Linux specific files
 * windows - Windows specific files
 
